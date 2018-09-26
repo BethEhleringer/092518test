@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>NYT</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    </head>
+    <body>
+        <h1 id="header">New York Times Search</h1>
+
+        <form>
+            <label for="search-phrase">Search Term:</label><br>
+            <input type="text" name="search-phrase" id="search-phrase"><br>
+            <label for="number-records">Number of Records to Retrieve:</label><br>
+            <select name="" id="number-records">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select>
+            <label for="start-year">Start Year (Optional):</label><br>
+            <input type="text" name="start-year" id="start-year"><br>
+            <label for="end-year">End Year (Optional):</label><br>
+            <input type="text" name="end-year" id="end-year"><br>
+            <input type="submit" id="search-button">
+            <input type="button" id="clear-button">
+        </form>
+
+        <div id="articles-here"></div>
+
+        <script
+        src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+        <script src="app.js"></script>
+    </body>
+</html>
